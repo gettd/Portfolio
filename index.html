@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-light navbar-light">
+      <div class="container">
+        <a href="#" class="navbar-brand">
+          <img src="images/signature.png" height="100" alt="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- home -->
+    <section id="home" class="bg-light text-dark p-5 text-center text-sm-start">
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <img
+            class="img-fluid w-25 d-none d-lg-block"
+            src="images/profile.png"
+            alt="profile"
+          />
+          <div class="ms-auto">
+            <h1><span class="text-success">Tanadol</span> Chuntarasupt</h1>
+            <p class="lead my-4">Welcome to my first responsive website!</p>
+            <form method="post" action="href="https://github.com/gettd"><button class="btn btn-success btn-lg">My Github</button></form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about -->
+    <section id="about" class="">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md">
+            <img src="images/aboutProfile.png" class="img-fluid" alt="" />
+          </div>
+          <div class="col-md p-5">
+            <h2>About me</h2>
+            <p class="lead">
+              My name is Tanadol Chuntarasupt, and I'm a hardworking software
+              developing student that values devotion and hard work. Working
+              with a variety of languages, including C++, Python, HTML, CSS, and
+              JavaScript, has taught me discipline and teamwork.
+            </p>
+            <p>
+              For the past two years, I've been working and experimenting with
+              robotic engineering projects, and I'm currently leaning toward
+              website design and development. This is my first project for a
+              responsive website, I hope you enjoy it!
+            </p>
+            <a href="#" class="btn btn-light mt-3">
+              <i class="bi bi-chevron-right"></i> Read more
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact -->
+    <section id="contact" class="p-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md">
+            <h2 class="text-center mb-4">Contact Info</h2>
+            <ul class="list-group list-group-flush lead">
+              <li class="list-group-item">
+                <span class="fw-bold">Location</span> Bangkae, Bangkok, Thailand
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Mobile Phone</span> +66 99 648 0010
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Instagram</span> @get.td
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">E-mail</span> getchunt@gmail.com
+              </li>
+            </ul>
+          </div>
+          <div class="col-md">
+            <div id="map"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
+    <script>
+      mapboxgl.accessToken =
+        "pk.eyJ1IjoiZ2V0dGQiLCJhIjoiY2t5Zm45eTNrMTMzcjJ1cWhqajBjazgwMCJ9.PjYYzHIa70_uON23i3m_9Q";
+      var map = new mapboxgl.Map({
+        container: "map",
+        style: "mapbox://styles/mapbox/streets-v11",
+        center: [100.37820475044062, 13.708306149068584],
+        zoom: 10,
+      });
+      new mapboxgl.Marker()
+        .setLngLat([100.37820475044062, 13.708306149068584])
+        .addTo(map);
+    </script>
+  </body>
+</html>
