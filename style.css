@@ -3,3 +3,17 @@
   height: 100%;
   border-radius: 10px;
 }
+#gotopbtn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  font-size: 22px;
+  width: 50px;
+  height: 50px;
+  background: #57837b;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: none;
+  border-radius: 50%;
+}

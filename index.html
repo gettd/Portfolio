@@ -18,6 +18,11 @@
       href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css" />
     <title>Portfolio</title>
   </head>
@@ -55,11 +60,19 @@
     <section id="home" class="bg-light text-dark p-5 text-center text-sm-start">
       <div class="container">
         <div class="d-sm-flex align-items-center justify-content-between">
+          <div>
+            <h1><span class="text-success">Tanadol</span> Chuntarasupt</h1>
+            <p class="lead my-4">Welcome to my first responsive website!</p>
+            <a href="https://github.com/gettd"
+              ><button class="btn btn-success btn-lg">My Github</button></a
+            >
+          </div>
           <img
-            class="img-fluid w-25 d-none d-lg-block"
+            class="img-fluid w-25 d-none d-md-block"
             src="images/profile.png"
             alt="profile"
           />
+<<<<<<< HEAD
           <div class="ms-auto">
             <h1><span class="text-success">Tanadol</span> Chuntarasupt</h1>
             <p class="lead my-4">Welcome to my first responsive website!</p>
@@ -67,6 +80,8 @@
               ><button class="btn btn-success btn-lg">My Github</button></a
             >
           </div>
+=======
+>>>>>>> 08594bd (update)
         </div>
       </div>
     </section>
@@ -125,6 +140,10 @@
         </div>
       </div>
     </section>
+    <!-- btn -->
+    <button id="gotopbtn"><i class="fas fa-chevron-up"></i></button>
+
+    <!-- script -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
@@ -144,5 +163,6 @@
         .setLngLat([100.37820475044062, 13.708306149068584])
         .addTo(map);
     </script>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
